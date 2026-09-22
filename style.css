@@ -396,8 +396,8 @@
   .plan-toggle svg { width: 13px; height: 13px; transition: transform 0.2s ease; }
   .plan-toggle.open svg { transform: rotate(180deg); }
 
-  #fullPlan { display: none; overflow-x: hidden; }
-  #fullPlan.open { display: block; }
+  #fullPlan { display: block; overflow-x: hidden; }
+  #fullPlan.closed { display: none; }
 
   footer.appfoot {
     margin-top: 56px;

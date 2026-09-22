@@ -326,10 +326,10 @@ document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 document.getElementById('planToggle').addEventListener('click', () => {
   const el = document.getElementById('fullPlan');
   const btn = document.getElementById('planToggle');
-  const opening = !el.classList.contains('open');
-  el.classList.toggle('open');
+  const closing = !el.classList.contains('closed');
+  el.classList.toggle('closed');
   btn.classList.toggle('open');
-  btn.querySelector('span').textContent = opening ? 'Ocultar el plan' : 'Ver los 365 días';
+  btn.querySelector('span').textContent = closing ? 'Ver los 365 días' : 'Ocultar el plan';
 });
 
 loadTheme();
